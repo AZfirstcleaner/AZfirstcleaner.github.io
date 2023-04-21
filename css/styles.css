@@ -1,0 +1,248 @@
+/* Change color values to customize */
+:root {
+  --primary-color: #0080ff;
+  --selection-color: #003972;
+  --secondary-color: #ffffff;
+  --bg-color: #ffffff;
+  --bg-secondary: #ced6ff;
+  --text-color: #333;
+  --shadow-color: rgba(0, 0, 0, 0.2);
+}
+
+body {
+  margin: 0;
+  font-family: 'Roboto', Arial, sans-serif;
+  line-height: 1.6;
+  color: var(--text-color);
+  background-color: var(--bg-secondary);
+}
+
+/*CONTENT*/
+
+main {
+  padding-top: 5rem;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*PAGE MANAGER*/
+/* This hides all pages */
+.page {
+  display: none;
+}
+
+/* This displays the first page */
+.default {
+  display: block;
+}
+
+/* This displays the page corresponding to the one you clicked on */
+:target {
+  display: block;
+}
+
+/* This hides the default page when another page is clicked */
+:target ~ .default {
+  display: none;
+}
+
+.section {
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--bg-color);
+  padding: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2rem;
+
+  max-width: 80%;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px var(--shadow-color);
+}
+
+.section-col {
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--bg-color);
+  padding: 0.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2rem;
+  min-width: 400px;
+  max-width: 800px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px var(--shadow-color);
+}
+
+.section-header {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.section-big-title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0.5rem;
+}
+
+.section-image {
+  border-radius: 4px;
+  height: 300px;
+  object-fit: cover;
+  max-width: 350px;
+  width: 45%;
+  margin-right: 1rem;
+}
+
+.section:nth-child(even) .section-image {
+  order: 2;
+}
+
+.section-text {
+  width: 50%;
+  margin-right: 5px;
+}
+
+.section p {
+  text-align: justify;
+  text-justify: inter-word;
+  font-size: 1rem;
+}
+
+.section-col p {
+  text-align: center;
+  text-justify: inter-word;
+  font-size: 1rem;
+}
+
+label {
+  text-align: center;
+  text-justify: inter-word;
+  font-size: 1.25rem;
+}
+
+/* FORM */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  border-radius: 5px;
+  width: 80%;
+  max-width: 500px;
+}
+
+label {
+  margin-top: 15px;
+  font-size: 16px;
+  color: #646464;
+  display: block;
+  text-align: left;
+  width: 100%;
+}
+
+input,
+textarea {
+  font-size: 16px;
+  padding: 10px;
+  border: none;
+  width: 100%;
+  border-radius: 5px;
+  margin-top: 5px;
+  box-shadow: inset 0px 0px 2px var(--shadow-color);
+}
+
+textarea {
+  height: 120px;
+}
+
+button[type="submit"] {
+  background-color: var(--primary-color);
+  color: #fff;
+  font-size: 16px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: var(--primary-color);
+}
+
+#services .section-image {
+  border-radius: 4px;
+  height: 600px;
+  object-fit: cover;
+  max-width: 100%;
+  width: 45%;
+  margin-right: 1rem;
+}
+
+#services .section-text {
+  width: 50%;
+  margin-right: 5px;
+}
+
+#services .section-header {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+#services ul {
+  list-style: disc;
+  margin-left: 1.5rem;
+}
+
+#services .section p {
+  text-align: justify;
+  text-justify: inter-word;
+  font-size: 1rem;
+}
+
+#services .button-internal {
+  background-color: var(--primary-color);
+  display: block;
+  text-align: center;
+  margin: 1rem;
+  color: white;
+  font-size: 1rem;
+  padding: 1rem 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button {
+  background-color: var(--primary-color);
+  color: white;
+  font-size: 1rem;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: var(--selection-color);
+}
+
+#services .button-internal:hover {
+  background-color: var(--selection-color);
+}
