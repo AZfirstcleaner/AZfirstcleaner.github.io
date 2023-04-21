@@ -16,7 +16,7 @@
 <body>
   <nav class="navbar">
     <div class="navbar-container container">
-      <input type="checkbox" name="" id="">
+      <input type="checkbox" name="" id="hamburger-checkbox">
       <div class="hamburger-lines">
         <span class="line line1"></span>
         <span class="line line2"></span>
@@ -201,6 +201,8 @@
 
       // Navigate to the link after the transition is complete
       window.location.href = link.getAttribute('href');
+
+      document.getElementById("hamburger-checkbox").checked = false;
 
       document.body.scrollTop = document.documentElement.scrollTop = 0;
     });
