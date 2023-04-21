@@ -10,7 +10,6 @@
 }
 
 body {
-  margin: 0;
   font-family: 'Roboto', Arial, sans-serif;
   line-height: 1.6;
   color: var(--text-color);
@@ -20,11 +19,11 @@ body {
 /*CONTENT*/
 
 main {
-  padding-top: 5rem;
-  max-width: 1200px;
-  display: flex;
+  padding-top: 4rem;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
   flex-direction: column;
-  align-items: center;
 }
 
 /*PAGE MANAGER*/
@@ -56,27 +55,26 @@ main {
   align-items: center;
   background-color: var(--bg-color);
   padding: 1rem;
+  margin-bottom: 1rem;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 2rem;
-
-  max-width: 80%;
+  min-width: 325px;
+  max-width: 90%;
   border-radius: 4px;
   box-shadow: 0 2px 4px var(--shadow-color);
 }
 
 .section-col {
-
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: var(--bg-color);
   padding: 0.5rem;
+  margin-bottom: 1rem;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 2rem;
-  min-width: 400px;
-  max-width: 800px;
+  min-width: 350px;
+  max-width: 90%;
   border-radius: 4px;
   box-shadow: 0 2px 4px var(--shadow-color);
 }
@@ -110,11 +108,11 @@ main {
 
 .section-text {
   width: 50%;
-  margin-right: 5px;
+  margin-right: 1rem;
 }
 
 .section p {
-  text-align: justify;
+  text-align: left;
   text-justify: inter-word;
   font-size: 1rem;
 }
